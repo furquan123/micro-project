@@ -1,0 +1,18 @@
+version: '3'
+services:
+  train:
+    image: fk23/gpaytrain:v1
+    ports:
+      - "8000:80"
+
+  loan:
+    image: fk23/gpayloan:v1
+    ports:
+      - "8001:80"
+
+  airline:
+    image: fk23/gpayairline:v1
+    ports:
+      - "8002:80"   
+        
+        
